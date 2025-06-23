@@ -35,7 +35,6 @@ If using pipenv, the packages are installed from Pipfile.
 4. Set up the database
 export FLASK_APP=app:create_app
 export PYTHONPATH=.
-
 flask db init
 flask db migrate -m "Initial migration"
 flask db upgrade
@@ -45,7 +44,14 @@ python app.py
 App runs at:
 👉 http://127.0.0.1:5555
 
-API Endpoints
+# Testing with Postman
+Import the provided Postman collection:
+challenge-4-lateshow.postman_collection.json
+
+
+
+# API Endpoints
+Test each route:
 🔹 Episodes
 Method	Endpoint	  Description
 GET	   episodes	     Get all episodes
